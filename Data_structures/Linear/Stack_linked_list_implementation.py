@@ -77,5 +77,5 @@ if __name__ == '__main__':
 
     print("stack: ", stack)
 
-    print("Stack is empyt: ",stack.is_empty())
+    print("Stack is empty: ",stack.is_empty())
         
