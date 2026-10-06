@@ -1,14 +1,14 @@
 # Brute Force
-def bubble_sort_slow(arr):
-    n = len(arr)
+def bubble_sort_slow(nums):
+    n = len(nums)
     for i in range(n):
         for j in range(1, n - i):
-            if arr[j-1] > arr[j]:
-                arr[j-1], arr[j] = arr[j], arr[j-1]
-    return arr
+            if nums[j-1] > nums[j]:
+                nums[j-1], nums[j] = nums[j], nums[j-1]
+    return nums
 
-arr = [3,1,6,7,2,-7,8]
-print(bubble_sort_slow(arr))
+nums = [3,1,6,7,2,-7,8]
+print(bubble_sort_slow(nums))
 
 # time - O(n^2) always
 # space = O(1)
@@ -34,8 +34,8 @@ def bubble_sort(nums):
 
 
 
-arr2 = [3,1,6,7,2,-7,8]
-print(bubble_sort(arr2))
+nums2 = [3,1,6,7,2,-7,8]
+print(bubble_sort(nums2))
 
 # time - O(n^2) worst case
 # time - O(n) best case
